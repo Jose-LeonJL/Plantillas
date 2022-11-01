@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+/* Colores */
+:root {
+    --fondo-blanco: #fff;
+    --contorno-negro: #000;
+    --fondo-azul: #0215d4;
+}
+
+body {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+#Barra-Menu{
+    padding: 0.5rem 1rem;
+    background-color: var(--fondo-azul);
+    position: sticky;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+    box-shadow: 0 1px 8px;
+    width: 15vw;
+    height: 100vh;
+}
+#Barra-Div{
+    /* display: table; */
+    vertical-align: middle;
+}
+.Contenedor-Img{
+    display: block;
+}
+.Barra-Img-Logo{
+    display: block;
+    height: 70px;
+    padding-top: 5vh;
+}
+.Barra-Boton{
+    display: none;
+    /* borde */
+    border-radius: 6px;
+    border: 2px solid var(--GrisOscuro);
+    text-decoration: none;
+    color: #fff;
+    /* Tamaño */
+    height: auto;
+    min-width: 50px;
+    font-size: 45px;
+    /* padding: 5px; desactivado para crear el borderradius  */
+}
+.Barra-Links{
+    display: inline-block;
+    /* vertical-align: middle; */
+    float: left;
+    padding-top: 15vh;
+}
+.Link{
+    margin: 0px 2.5px;
+    background-color: transparent;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: var(--fondo-blanco);
+    display: block;
+    padding: 1rem 1rem;
+    position: relative;
+    transform: scaleX(1);
+    /*transition: all .3s ease;/*Esta cosa hay que ver como hacer que se arregle el problema de movimiento al cargar la pagina  */
+}
+.Link:hover{
+    transform: scaleX(1.06);
+    /* font-size: 17px; */
+    transition: all .5s ease;
+    /* color: var(--GrisOscuro); no se que color ponerle*/ 
+}
+.Contenedor-principal{
+    position: absolute;
+    background-color: var(--fondo-blanco);
+    height: 100vh;
+    display: block;
+    top: 0;
+    /* width: 100vw; */
+}
+.politicas-terminos{
+    margin: 1rem;
+}
+.footer-m{
+    width: 85vw;
+    padding-left: 15vw;
+}
